@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 20/06/2019 08:58:18 AM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="modelos.Persona" table="PERSONA" schema="REST" optimistic-lock="version">
+        <id name="perId" type="byte">
+            <column name="PER_ID" precision="22" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="perNom" type="string">
+            <column name="PER_NOM" length="100" />
+        </property>
+        <property name="perApe" type="string">
+            <column name="PER_APE" length="100" />
+        </property>
+        <property name="perEdad" type="java.lang.Byte">
+            <column name="PER_EDAD" precision="2" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

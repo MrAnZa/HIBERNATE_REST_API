@@ -1,0 +1,2 @@
+# HIBERNATE_REST_API
+JAVA API REST usando Hibernate y JAX-RS 

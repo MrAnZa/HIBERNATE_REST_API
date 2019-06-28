@@ -8,7 +8,7 @@ import java.math.BigDecimal;
  */
 public class Persona implements java.io.Serializable {
 
-    private Byte perId;
+    private int perId;
     private String perNom;
     private String perApe;
     private Byte perEdad;
@@ -17,7 +17,7 @@ public class Persona implements java.io.Serializable {
         this.perId = 0; //se pone 0 porque la base de datos tiene el campo como auto increment
     }
 
-    public Persona(Byte perId) {
+    public Persona(int perId) {
         this.perId = perId;
     }
 
@@ -33,11 +33,11 @@ public class Persona implements java.io.Serializable {
         this.perEdad = perEdad;
     }
 
-    public Byte getPerId() {
+    public int getPerId() {
         return this.perId;
     }
 
-    public void setPerId(Byte perId) {
+    public void setPerId(int perId) {
         this.perId = perId;
     }
 

@@ -45,7 +45,7 @@ public class PersonaOperaciones {
         session.close();
     }
 
-    public Persona findPersona(byte id) {
+    public Persona findPersona(int id) {
         SessionFactory sesion = HibernateUtil.getSessionFactory();
         Session session = sesion.openSession();
         Transaction tx = session.beginTransaction();
@@ -64,7 +64,7 @@ public class PersonaOperaciones {
         session.close();
     }
 
-    public void deletePersona(byte id) {
+    public void deletePersona(int id) {
         SessionFactory sesion = HibernateUtil.getSessionFactory();
         Session session = sesion.openSession();
         Transaction tx = session.beginTransaction();

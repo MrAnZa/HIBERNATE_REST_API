@@ -4,7 +4,7 @@
 <!-- Generated 20/06/2019 08:58:18 AM by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="modelos.Persona" table="PERSONA" schema="REST" optimistic-lock="version">
-        <id name="perId" type="byte">
+        <id name="perId" type="int">
             <column name="PER_ID" precision="22" scale="0" />
             <generator class="assigned" />
         </id>
